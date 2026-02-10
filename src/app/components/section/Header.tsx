@@ -1,0 +1,58 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import style from "./Header.module.scss";
+import LoadingSpinner from "@/app/components/system/LoadingSpinner";
+import SideNav from "@/app/components/system/SideNav";
+import HamburgerIcon from "@/app/components/icons/HamburgerIcon";
+import LogoIcon from "@/app/components/icons/Logo";
+
+const ResponsiveAppBar = () => {
+  const [isSideNavOpen, setIsSideNavOpen] = useState(false);
+  const [isLoading] = useState(false);
+
+  const toggleSideNav = () => {
+    setIsSideNavOpen(!isSideNavOpen);
+  };
+
+  const closeSideNav = () => {
+    setIsSideNavOpen(false);
+  };
+
+  return (
+    <>
+      {/* Loading Overlay */}
+      <div className={`${style.loadingOverlay} ${!isLoading ? style.hidden : ""}`}>
+        <LoadingSpinner color={"white"} />
+      </div>
+
+      <header className={`${style.header} ${isLoading ? style.headerHidden : style.headerVisible}`}>
+        <div className={`${style.leftNavContainer} ${!isLoading ? style.fadeIn : style.fadeOut}`}>
+          <div className={style.hamburgerMenu}>
+            <HamburgerIcon isOpen={isSideNavOpen} onClick={toggleSideNav} width={24} height={24} />
+          </div>
+
+          <ul className={style.navItemContainer}>
+            <li className={style.navItem}>
+              <Link href={"/about"}>about</Link>
+            </li>
+          </ul>
+        </div>
+
+        <span className={`${style.logo} ${!isLoading ? style.logoSmall : ""}`}>
+          {/* Hier kommt dein Logo.tsx hin */}
+        <LogoIcon height={60} />
+        </span>
+
+        <span className={`${style.rightNavContainer} ${!isLoading ? style.fadeIn : style.fadeOut}`}>
+          {/* Platz für rechte Nav-Elemente */}
+        </span>
+      </header>
+
+      <SideNav isOpen={isSideNavOpen} onClose={closeSideNav} />
+    </>
+  );
+};
+
+export default ResponsiveAppBar;
