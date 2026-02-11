@@ -17,7 +17,7 @@ const Footer: FC = () => {
               <li>
                 <MailIcon />
                 <span id="mail" className={style.contactContent}>
-                  Email:&nbsp;{" "}
+                  Email:&nbsp;
                   <a href="mailto:d.meier@meier-technik.ch">d.meier@meier-technik.ch</a>
                 </span>
               </li>

@@ -3,8 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import style from "./Header.module.scss";
-import LoadingSpinner from "@/app/components/system/LoadingSpinner";
-import SideNav from "@/app/components/system/SideNav";
+import LoadingSpinner from "@/app/components/system/loadingSpinner/LoadingSpinner";
+import SideNav from "@/app/components/system/sideNav/SideNav";
 import HamburgerIcon from "@/app/components/icons/HamburgerIcon";
 import LogoIcon from "@/app/components/icons/Logo";
 

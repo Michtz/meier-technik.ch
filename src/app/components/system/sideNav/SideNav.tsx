@@ -28,7 +28,7 @@ const SideNav: React.FC<SideNavProps> = ({ isOpen, onClose }) => {
             {/*<Logo.tsx width={250} height={30} />*/}
             <ul className={style.navList}>
               <li className={style.navItem}>
-                <Link href="/">home</Link>
+                <Link href="/public">home</Link>
               </li>
               <li className={style.navItem}>
                 <Link href="/about">about</Link>
