@@ -32,21 +32,13 @@ const Footer: FC = () => {
 
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10876.094198278743!2d8.31044935!3d47.0397687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ffb98861b02a9%3A0x9c81ffcf202e488d!2sLuzern!5e0!3m2!1sde!2sch!4v1770829445313!5m2!1sde!2sch"
-            style={{
-              border: 0,
-              filter: "grayscale(100%) contrast(1.2) brightness(0.9)",
-              width: "100%",
-              height: "100%",
-              margin: "0 2rem"
-            }}
-
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
         <div className={`${style.footerColumn} ${style.additionalInfo}`}>
-              <Link href="/legal/terms">Datenschutz</Link>
-              <Link href="/legal/privacy">Impressum</Link>
+          <Link href="/legalterms">Impressum</Link>
+          <Link href="/privacy">Datenschutz</Link>
         </div>
         <div className={style.footerBottom}>
           <div className={style.copyright}>

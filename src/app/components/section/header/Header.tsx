@@ -35,19 +35,18 @@ const ResponsiveAppBar = () => {
 
           <ul className={style.navItemContainer}>
             <li className={style.navItem}>
-              <Link href={"/about"}>about</Link>
+              <Link href={"/about"}>Über uns</Link>
             </li>
           </ul>
         </div>
 
-        <span className={`${style.logo} ${!isLoading ? style.logoSmall : ""}`}>
-          {/* Hier kommt dein Logo.tsx hin */}
-        <LogoIcon height={60} />
-        </span>
+        <a href={"/"} className={`${style.logo} ${!isLoading ? style.logoSmall : ""}`}>
+          <LogoIcon height={60} />
+        </a>
 
-        <span className={`${style.rightNavContainer} ${!isLoading ? style.fadeIn : style.fadeOut}`}>
-          {/* Platz für rechte Nav-Elemente */}
-        </span>
+        <span
+          className={`${style.rightNavContainer} ${!isLoading ? style.fadeIn : style.fadeOut}`}
+        ></span>
       </header>
 
       <SideNav isOpen={isSideNavOpen} onClose={closeSideNav} />

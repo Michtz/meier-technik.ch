@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "@/styles/globals.scss";
+import "@/app/globals.scss";
 import Header from "@/app/components/section/header/Header";
 import Footer from "@/app/components/section/footer/Footer";
 
