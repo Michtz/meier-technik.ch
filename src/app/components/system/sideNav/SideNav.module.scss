@@ -1,3 +1,6 @@
+@use '../../../_variables' as *;
+
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -27,8 +30,8 @@
   left: 0;
   width: 320px;
   height: 100vh;
-  background-color: var(--foreground);
-  color: white;
+  background-color: $color-bg;
+  color: $color-text;
   z-index: 999;
   transform: translateX(-100%);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -60,7 +63,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: $color-text;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 0.5rem;
   }
@@ -79,7 +82,7 @@
   a {
     display: block;
     padding: 0.75rem 1rem;
-    color: white;
+    color: $color-text;
     text-decoration: none;
     border-radius: 8px;
     transition: all 0.2s ease-in-out;
@@ -89,7 +92,7 @@
     &:hover {
       background-color: rgba(255, 255, 255, 0.1);
       transform: translateX(5px);
-      color: #fff;
+      color: $color-text;
     }
 
     &:active {
@@ -149,7 +152,7 @@
 
   span {
     font-weight: 500;
-    color: white;
+    color: $color-text;
   }
 
   svg {

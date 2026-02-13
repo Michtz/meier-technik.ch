@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import style from "./SideNav.module.scss";
+import LogoIcon from "@/app/components/icons/Logo";
+import InstagramIcon from "@/app/components/icons/InstagramIcon";
 
 interface SideNavProps {
   isOpen: boolean;
@@ -13,7 +15,7 @@ const SideNav: React.FC<SideNavProps> = ({ isOpen, onClose }) => {
 
   useEffect(() => {
     onClose();
-  }, [path]); /* eslint-disable-line react-hooks/exhaustive-deps */
+  }, [path]);
 
   return (
     <>
@@ -25,52 +27,34 @@ const SideNav: React.FC<SideNavProps> = ({ isOpen, onClose }) => {
       <nav className={`${style.sideNav} ${isOpen ? style.sideNavOpen : ""}`}>
         <div className={style.sideNavContent}>
           <div className={style.navSection}>
-            {/*<Logo.tsx width={250} height={30} />*/}
+            <Link href="/" className={style.logoWrapper}>
+              <LogoIcon height={60} />
+            </Link>
             <ul className={style.navList}>
               <li className={style.navItem}>
-                <Link href="/public">home</Link>
+                <Link href="/about">Über uns</Link>
               </li>
               <li className={style.navItem}>
-                <Link href="/about">about</Link>
-              </li>
-              <li className={style.navItem}>
-                <Link href="/blog">blog</Link>
+                <Link href="/knowledge">Erfahrung</Link>
               </li>
             </ul>
           </div>
 
           <div className={style.navSection}>
-            <h3 className={style.sectionTitle}>sideNav.service</h3>
-            <ul className={style.navList}>
+            <h3 className={style.sectionTitle}>Kontakt & Social</h3>
+            <ul className={`${style.navList} ${style.socialList}`}>
               <li className={style.navItem}>
-                <Link href="/service/contact">contact</Link>
+                <Link
+                  href="https://www.instagram.com/meier_technik_gmbh?igsh=MWhuam0waXQzYnpndA=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={style.iconLink}
+                >
+                  <InstagramIcon />
+                </Link>
               </li>
               <li className={style.navItem}>
-                <Link href="/service/customer-service">sideNav.customerService</Link>
-              </li>
-              <li className={style.navItem}>
-                <Link href="/service/faq">sideNav.faq</Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className={style.navSection}>
-            <h3 className={style.sectionTitle}>sideNav.legal</h3>
-            <ul className={style.navList}>
-              <li className={style.navItem}>
-                <Link href="/legal/imprint">sideNav.imprint</Link>
-              </li>
-              <li className={style.navItem}>
-                <Link href="/legal/privacy">sideNav.privacy</Link>
-              </li>
-              <li className={style.navItem}>
-                <Link href="/legal/terms">sideNav.terms</Link>
-              </li>
-              <li className={style.navItem}>
-                <Link href="/legal/shipping">sideNav.shipping</Link>
-              </li>
-              <li className={style.navItem}>
-                <Link href="/legal/returns">sideNav.returns</Link>
+                <a href="mailto:d.meier@meier-technik.ch">d.meier@meier-technik.ch</a>
               </li>
             </ul>
           </div>
