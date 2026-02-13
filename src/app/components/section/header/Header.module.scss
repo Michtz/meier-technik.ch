@@ -5,13 +5,13 @@
   display: flex;
   justify-content: space-between;
   height: 75px;
-  padding: 0;
+  padding:  0 5%;
   background-color: var(--foreground);
   color: $color-text;
   border-bottom: 2px solid rgba(239, 232, 220);
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.02);
   margin-bottom: 2rem;
-  width: 100vw;
+  width: auto;
 
   // Animation Properties
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -65,6 +65,10 @@
         padding-right: 20px;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
+
+        .contact{
+          display: flex;
+        }
 
         &:hover {
           transform: translateY(-1px);
@@ -212,11 +216,13 @@
     display: flex;
     align-items: center;
 
-    &.logoSmall {
-      transform: scale(0.8);
-    }
+    //&.logoSmall {
+    //  transform: scale(0.8);
+    //}
     &:hover {
-      transform: scale(0.85);
+      transform: scale(1.05);
+      cursor: pointer;
+
     }
   }
 
@@ -225,7 +231,9 @@
     align-items: center;
     gap: 3rem;
     transition: all 0.4s ease-in-out;
-    margin-left: 20px;
+    padding: 0 20px ;
+
+
 
     .cartIcon {
       cursor: pointer;

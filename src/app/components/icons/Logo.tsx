@@ -9,8 +9,8 @@ interface LogoIconProps {
 }
 
 const LogoIcon: React.FC<LogoIconProps> = ({
-  width = 545,
-  height = 348,
+  width = 84,
+  height = 88,
   className,
   onClick,
   style,
@@ -24,8 +24,7 @@ const LogoIcon: React.FC<LogoIconProps> = ({
     className={className}
     onClick={onClick}
     style={{
-      cursor: onClick ? "pointer" : "default",
-      ...style
+      ...style,
     }}
   >
     <path
@@ -52,12 +51,7 @@ const LogoIcon: React.FC<LogoIconProps> = ({
     </g>
     <defs>
       <clipPath id="clip0_3_17">
-        <rect
-          width="130"
-          height="130"
-          fill="white"
-          transform="translate(112.288 180) rotate(20.3877)"
-        />
+        <rect fill="white" transform="translate(112.288 180) rotate(20.3877)" />
       </clipPath>
     </defs>
   </svg>

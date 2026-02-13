@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import style from "./Header.module.scss";
 import LoadingSpinner from "@/app/components/system/loadingSpinner/LoadingSpinner";
@@ -8,6 +8,7 @@ import SideNav from "@/app/components/system/sideNav/SideNav";
 import HamburgerIcon from "@/app/components/icons/HamburgerIcon";
 import LogoIcon from "@/app/components/icons/Logo";
 import InstagramIcon from "@/app/components/icons/InstagramIcon";
+import MailIcon from "@/app/components/icons/MailIcon";
 
 const ResponsiveAppBar = () => {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
@@ -38,17 +39,23 @@ const ResponsiveAppBar = () => {
             <li className={style.navItem}>
               <Link href={"/about"}>Über uns</Link>
             </li>
-            <li className={style.navItem}></li>
+            <li className={style.navItem}>
+              <Link href={"/knowledge"}>Erfahrung</Link>
+            </li>
           </ul>
         </div>
 
-        <a href={"/"} className={`${style.logo} ${!isLoading ? style.logoSmall : ""}`}>
-          <LogoIcon height={60} />
+        <a href={"/"} className={`${style.logo}`}>
+          <LogoIcon height={80} />
         </a>
 
         <span className={`${style.rightNavContainer} ${!isLoading ? style.fadeIn : style.fadeOut}`}>
           <Link href={"https://www.instagram.com/meier_technik_gmbh?igsh=MWhuam0waXQzYnpndA=="}>
             <InstagramIcon />
+          </Link>
+          <Link href={"#mail"}>
+            {" "}
+            <MailIcon width={30} height={30} />
           </Link>
         </span>
       </header>

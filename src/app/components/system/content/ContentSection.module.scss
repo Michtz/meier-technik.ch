@@ -1,0 +1,72 @@
+.section {
+  width: 100%;
+  padding: 4rem 1rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 4px;
+  overflow: hidden;
+
+  @media (max-width: 900px) {
+    height: 350px;
+    order: 1; // Bild zuerst auf Mobile (optional)
+  }
+}
+
+.image {
+  object-fit: cover;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @media (max-width: 900px) {
+    order: 2;
+  }
+}
+
+.eyebrow {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #c49a6c; // Beispielhafter Braunton aus dem Bild
+  font-weight: 600;
+}
+
+.headline {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #1a1a1a;
+  font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+}

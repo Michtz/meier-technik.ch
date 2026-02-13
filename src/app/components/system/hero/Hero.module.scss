@@ -1,0 +1,40 @@
+.titleImageContainer {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+}
+
+.backgroundImage {
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.title {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 15px;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}

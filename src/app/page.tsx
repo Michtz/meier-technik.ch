@@ -1,13 +1,7 @@
-
-import Image from "next/image";
+import HomeContainer from "@/app/components/containers/home/HomeContainer";
 
 const Page = () => {
-
-  return (
-    <>
-      {/*<Image width={1000} height={500} src={"/images/smallVan.jpg"} alt={"image"} />*/}
-    </>
-  );
+  return <HomeContainer />;
 };
 
 export default Page;
