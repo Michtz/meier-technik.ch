@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
 import style from "./Header.module.scss";
 import LoadingSpinner from "@/app/components/system/loadingSpinner/LoadingSpinner";
 import SideNav from "@/app/components/system/sideNav/SideNav";
@@ -9,6 +8,7 @@ import HamburgerIcon from "@/app/components/icons/HamburgerIcon";
 import LogoIcon from "@/app/components/icons/Logo";
 import InstagramIcon from "@/app/components/icons/InstagramIcon";
 import MailIcon from "@/app/components/icons/MailIcon";
+import Link from "@/app/components/system/link/Link";
 
 const ResponsiveAppBar = () => {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
@@ -54,8 +54,7 @@ const ResponsiveAppBar = () => {
             <InstagramIcon />
           </Link>
           <Link href={"#mail"}>
-            {" "}
-            <MailIcon width={30} height={30} />
+            <MailIcon className={style.mailIcon} width={45} height={45} />
           </Link>
         </span>
       </header>

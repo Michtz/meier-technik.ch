@@ -9,8 +9,8 @@ interface InstagramIconProps {
 }
 
 const InstagramIcon: React.FC<InstagramIconProps> = ({
-  width = 24,
-  height = 24,
+  width = 30,
+  height = 30,
   color = "#000000",
   className,
   onClick,

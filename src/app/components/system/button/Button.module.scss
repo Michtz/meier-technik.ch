@@ -1,3 +1,5 @@
+@use '../../../_variables' as *;
+
 .buttonContainer {
   border-radius: 8px;
   font-weight: 500;
@@ -166,7 +168,6 @@
 }
 
 .buttonOption {
-  font-family: 'Josefin Sans', sans-serif;
   border-radius: 6px;
   font-weight: 500;
   transition: all 0.2s ease;
@@ -266,9 +267,7 @@
     gap: 8px;
     align-items: center;
     list-style: none;
-    font-family:
-            Josefin Sans,
-            sans-serif;
+
     font-size: 17px;
     cursor: pointer;
     margin-bottom: 1rem;

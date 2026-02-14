@@ -1,3 +1,5 @@
+@use '../../../_variables' as *;
+
 .titleImageContainer {
   position: relative;
   width: 100%;
@@ -28,7 +30,7 @@
 .title {
   position: relative;
   z-index: 2;
-  color: #ffffff;
+  color: $color-text;
   font-size: 3.5rem;
   font-weight: 700;
   text-align: center;

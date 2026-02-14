@@ -1,54 +1,32 @@
+@use '../../../_variables' as *;
+
 .icon-container {
   display: flex;
   user-select: none;
 
   &[data-color='black'] {
-    color: #000000;
+    color: $color-black;
   }
 
   &[data-color='white'] {
-    color: #ffffff;
+    color: $color-white;
   }
 
   &[data-color='gray'] {
-    color: #494b4d;
+    color: $color-gray;
     z-index: 999;
   }
 
-  &[data-color='lightblue'] {
-    color: #3b82f6;
-  }
-
   &[data-color='lightgray'] {
-    color: #d1d5db;
-  }
-
-  &[data-color='smokewhite'] {
-    color: #f9fafb;
-  }
-
-  &[data-color='cloudwhite'] {
-    color: #f3f4f6;
+    color: $color-light-gray;
   }
 
   &[data-color='green'] {
-    color: #10b981;
+    color: $color-green;
   }
 
   &[data-color='red'] {
-    color: #ef4444;
-  }
-
-  &[data-color='required-red'] {
-    color: #dc2626;
-  }
-
-  &[data-color='border-glow'] {
-    color: #60a5fa;
-  }
-
-  &[data-color='border-glow-required'] {
-    color: #f87171;
+    color: $color-red;
   }
 
   &[data-size='extra-small'] {

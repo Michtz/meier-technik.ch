@@ -1,13 +1,61 @@
-$color-primary: #5d3b06;
-$color-secondary: #2c3e50;
-$color-bg: #f3f3f3;
+//// --- KONZEPT 1: Industrial Blue ---
+//$color-primary: #0056b3;      // Ein kräftiges "Arbeits-Blau" (wie Blaumann/Technik)
+//$color-secondary: #475569;    // Ein kühles Stahl-Grau
+//
+//$color-bg: #f8f9fa;           // Sehr helles, kühles Weiß (Fast Reinweiß)
+//$color-white: #ffffff;
+//$color-black: #0f172a;        // Kein hartes Schwarz, sondern sehr dunkles Blau-Schwarz
+//$color-gray: #94a3b8;         // Helles Metallgrau
+//$color-green: #16a34a;        // Frisches Signalgrün
+//$color-red: #dc2626;          // Warn-Rot
+//$color-bg-dark: #1e293b;      // Dunkles Slate für den Footer
+//$color-text: #334155;         // Dunkles Grau für weichen Lesefluss
+//$color-text-light: #f1f5f9;
+//$color-text-accent: #d97706;  // Ein Bernstein-Orange als Kontrast (wie Warnleuchten)
+//
+//$color-light-gray: #e2e8f0;   // Helle Strukturfarbe
+
+
+
+//// --- KONZEPT 2: High Visibility ---
+//$color-primary: #2d2d2d;      // Hartes Anthrazit als Hauptfarbe (Seriös)
+//$color-secondary: #facc15;    // "Safety Yellow" - Signalgelb (für Buttons/Icons)
+//
+//$color-bg: #ffffff;           // Reinweiß für maximale Sauberkeit
+//$color-white: #ffffff;
+//$color-black: #000000;
+//$color-gray: #737373;         // Neutrales Mittelgrau
+//$color-green: #22c55e;
+//$color-red: #ef4444;
+//$color-bg-dark: #171717;      // Fast Schwarz
+//$color-text: #171717;         // Hoher Kontrast
+//$color-text-light: #ffffff;
+//$color-text-accent: #eab308;  // Dunkleres Gelb für Text (Lesbarkeit)
+//
+//$color-light-gray: #f3f4f6;   // Sehr helles Grau zur Abgrenzung
+//
+//$font-main: "Roboto Mono", monospace;
+
+// --- KONZEPT 3: Earth & Steel ---
+$color-primary: #b45309;      // Ein rostiges, kräftiges Bronze/Orange (Caterpillar Vibes)
+$color-secondary: #44403c;    // Dunkles Graphit
+
+$color-bg: #f5f5f4;           // "Stone White" - ein ganz leicht warmes Grau
 $color-white: #ffffff;
-$color-bg-dark: #333333;
-$color-text: #000000;
+$color-black: #1c1917;        // Warmes Schwarz
+$color-gray: #a8a29e;         // Zementgrau
+$color-green: #4d7c0f;        // Olivgrün / Natur
+$color-red: #b91c1c;          // Ziegelrot
+$color-bg-dark: #292524;      // Sehr dunkles Braun-Grau für Footer
+$color-text: #292524;         // Fast Schwarz
+$color-text-light: #fafaf9;
+$color-text-accent: #d97706;  // Goldgelb für Highlights
+$color-light-gray: #e7e5e4;   // Warmes Hellgrau
 
-$color-light-gray: #f4f4f4;
 
-$font-main: "Inter", sans-serif;
+// __________________________________
+
+$font-main: "Roboto Mono", monospace;
 
 $max-width: 1200px;
 

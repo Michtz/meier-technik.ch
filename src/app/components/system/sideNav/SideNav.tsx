@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
 import style from "./SideNav.module.scss";
 import LogoIcon from "@/app/components/icons/Logo";
 import InstagramIcon from "@/app/components/icons/InstagramIcon";
+import Link from "@/app/components/system/link/Link";
+import MaterialIcon from "@/app/components/system/materialIcon/MaterialIcon";
 
 interface SideNavProps {
   isOpen: boolean;
@@ -25,6 +26,10 @@ const SideNav: React.FC<SideNavProps> = ({ isOpen, onClose }) => {
       />
 
       <nav className={`${style.sideNav} ${isOpen ? style.sideNavOpen : ""}`}>
+        <span className={style.close}>
+          <MaterialIcon onClick={onClose} icon={"close"} />
+        </span>
+
         <div className={style.sideNavContent}>
           <div className={style.navSection}>
             <Link href="/" className={style.logoWrapper}>
@@ -46,8 +51,7 @@ const SideNav: React.FC<SideNavProps> = ({ isOpen, onClose }) => {
               <li className={style.navItem}>
                 <Link
                   href="https://www.instagram.com/meier_technik_gmbh?igsh=MWhuam0waXQzYnpndA=="
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  external
                   className={style.iconLink}
                 >
                   <InstagramIcon />

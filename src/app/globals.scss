@@ -1,6 +1,10 @@
 
 @use './_variables' as *;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import 'material-icons/iconfont/material-icons.css';
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,6 +16,12 @@ body {
   color: $color-text;
   background-color: $color-bg;
   line-height: 1.6;
+  letter-spacing: 1.08px;
+}
+
+p{
+  font-family: $font-main;
+  letter-spacing: 1.08px;
 }
 
 a {

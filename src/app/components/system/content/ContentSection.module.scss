@@ -1,7 +1,10 @@
+
+@use '../../../_variables' as *;
+
 .section {
   width: 100%;
   padding: 4rem 1rem;
-  background-color: #fff;
+  background-color: $color-bg;
   display: flex;
   justify-content: center;
 }
@@ -50,14 +53,14 @@
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #c49a6c; // Beispielhafter Braunton aus dem Bild
+  color: $color-text-accent;
   font-weight: 600;
 }
 
 .headline {
   font-size: 2.5rem;
   line-height: 1.2;
-  color: #1a1a1a;
+  color: $color-text;
   font-weight: 700;
 
   @media (max-width: 768px) {
@@ -68,5 +71,5 @@
 .text {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #4a4a4a;
+  color: $color-text;
 }

@@ -1,11 +1,6 @@
 import React from "react";
 
-const MailIcon: React.FC<any> = ({
-  width = 75,
-  height = 75,
-  color = "#4C4B4B",
-  className,
-}) => (
+const MailIcon: React.FC<any> = ({ width = 75, height = 75, color = "#4C4B4B", className }) => (
   <svg
     width={width}
     height={height}
@@ -13,6 +8,7 @@ const MailIcon: React.FC<any> = ({
     fill="none"
     className={className}
     xmlns="http://www.w3.org/2000/svg"
+    style={{ cursor: "pointer" }}
   >
     <path
       d="M10 14H35C36.6569 14 38 15.3431 38 17V31C38 32.6569 36.6569 34 35 34H10C8.34315 34 7 32.6569 7 31V17C7 15.3431 8.34315 14 10 14Z"

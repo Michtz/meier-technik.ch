@@ -1,11 +1,6 @@
 import React from "react";
 
-const PhoneIcon: React.FC<any> = ({
-  width = 75,
-  height = 75,
-  color = "#4C4B4B",
-  className,
-}) => (
+const PhoneIcon: React.FC<any> = ({ width = 75, height = 75, color = "#4C4B4B", className }) => (
   <svg
     width={width}
     height={height}
@@ -13,6 +8,7 @@ const PhoneIcon: React.FC<any> = ({
     fill="none"
     className={className}
     xmlns="http://www.w3.org/2000/svg"
+    style={{ cursor: "pointer" }}
   >
     {/* Telefonhörer-Pfad */}
     <path

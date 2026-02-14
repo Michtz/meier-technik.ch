@@ -1,7 +1,8 @@
-// Circular Spinner
+@use '../../../_variables' as *;
+
 .spinner {
   border: 2px solid transparent;
-  border-top: 2px solid #3b82f6;
+  border-top: 2px solid $color-primary;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 
@@ -24,15 +25,15 @@
   }
 
   &[data-color='primary'] {
-    border-top-color: #3b82f6;
+    border-top-color: $color-primary;
   }
 
   &[data-color='white'] {
-    border-top-color: #ffffff;
+    border-top-color: $color-white;
   }
 
   &[data-color='gray'] {
-    border-top-color: #6b7280;
+    border-top-color: $color-gray;
   }
 }
 
@@ -56,15 +57,15 @@
   animation: pulse 1.4s ease-in-out infinite both;
 
   &[data-color='primary'] {
-    background-color: #3b82f6;
+    background-color: $color-primary;
   }
 
   &[data-color='white'] {
-    background-color: #ffffff;
+    background-color: $color-white;
   }
 
   &[data-color='gray'] {
-    background-color: #6b7280;
+    background-color: $color-gray;
   }
 
   .dotsContainer[data-size='small'] & {
@@ -116,15 +117,15 @@
   }
 
   &[data-color='primary'] {
-    background-color: #3b82f6;
+    background-color: $color-primary;
   }
 
   &[data-color='white'] {
-    background-color: #ffffff;
+    background-color: $color-white;
   }
 
   &[data-color='gray'] {
-    background-color: #6b7280;
+    background-color: $color-gray;
   }
 }
 
