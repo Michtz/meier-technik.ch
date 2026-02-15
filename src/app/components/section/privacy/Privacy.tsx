@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Privacy.module.scss";
-import Container from "@/app/components/system/container/Container";
+import { Container } from "@/app/components/system/container/Container";
 
 const Privacy = () => {
   return (
