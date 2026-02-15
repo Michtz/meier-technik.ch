@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: "Zuverlässiger Service für Verpackungsanlagen, Revisionen und Schweisstechnik.",
     images: [
       {
-        url: "/images/og-image.jpg", // Erstelle ein Bild (1200x630px) und leg es in /public/images/
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Meier Technik GmbH im Einsatz",
@@ -55,20 +55,20 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Meier Technik GmbH",
-  image: "https://www.meier-technik.ch/images/smallVan.jpg",
+  image: "https://www.meier-technik.ch/images/og-image.png",
   url: "https://www.meier-technik.ch",
-  telephone: "+41 79 000 00 00", // HIER TELEFONNUMMER EINTRAGEN
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Musterstrasse 1", // HIER ADRESSE EINTRAGEN
-    addressLocality: "Musterhausen",
-    postalCode: "6000",
+    streetAddress: "Guggibadstrasse 10",
+    addressLocality: "Schongau",
+    postalCode: "6288",
     addressCountry: "CH",
   },
+
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 47.050168, // HIER KOORDINATEN EINTRAGEN (Google Maps Rechtsklick)
-    longitude: 8.309307,
+    latitude: 47.267536,
+    longitude: 8.275975,
   },
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
