@@ -37,10 +37,13 @@ const ResponsiveAppBar = () => {
 
           <ul className={style.navItemContainer}>
             <li className={style.navItem}>
-              <Link href={"/about"}>Über uns</Link>
+              <Link href={"/services"}>Dienstleistungen</Link>
             </li>
             <li className={style.navItem}>
-              <Link href={"/knowledge"}>Erfahrung</Link>
+              <Link href={"/references"}>Referenzen</Link>
+            </li>
+            <li className={style.navItem}>
+              <Link href={"/about"}>Über uns</Link>
             </li>
           </ul>
         </div>

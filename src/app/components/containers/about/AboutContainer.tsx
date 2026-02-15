@@ -1,26 +1,28 @@
 import { FC } from "react";
 import Hero from "@/app/components/system/hero/Hero";
 import ContentSection from "@/app/components/system/content/ContentSection";
-import { BASE_TEXT, BASE_TITLE } from "@/app/components/containers/home/HomeContainer";
 
-const KnowledgeContainer: FC = () => {
+const AboutContainer: FC = () => {
   return (
     <>
-      <Hero title="Über Uns" imageSrc="/images/smallVan.jpg" />
+      <Hero title="Über Meier Technik" imageSrc="/images/smallVan.jpg" />
+
       <ContentSection
         imageSrc="/images/smallVan.jpg"
-        title={BASE_TITLE}
-        text={BASE_TEXT}
-        eyebrow={BASE_TITLE}
-        block
+        title="Handwerk mit Handschlagqualität"
+        text="Als selbstständiger Mechaniker und Inhaber der Meier Technik GmbH stehe ich für pragmatische Lösungen und technische Präzision. Wir sind da, wenn es brennt, aber auch, wenn es darum geht, Prozesse langfristig zu verbessern. Unsere Philosophie ist einfach: Wir kümmern uns um die Technik, damit Sie sich um Ihr Geschäft kümmern können."
+        eyebrow="Wer wir sind"
       />
+
       <ContentSection
         imageSrc="/images/smallVan.jpg"
-        title={BASE_TITLE}
-        text={BASE_TEXT}
-        eyebrow={BASE_TITLE}
+        title="Flexibilität ist unsere Stärke"
+        text="Ob als langfristiger Partner für die Instandhaltung oder als flexible Übergangslösung bei Personalengpässen: Wir passen uns Ihren Bedürfnissen an. Mit Erfahrung in verschiedensten Branchen – von der strikten Hygiene im Lebensmittelbereich bis zur robusten Umgebung im Sägewerk – bringen wir das nötige Know-how mit."
+        eyebrow="Philosophie"
+        reverse
       />
     </>
   );
 };
-export default KnowledgeContainer;
+
+export default AboutContainer;
