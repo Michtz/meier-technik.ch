@@ -9,7 +9,7 @@ const HomeContainer: FC = () => {
 
       {/* Intro */}
       <ContentSection
-        imageSrc="/images/smallVan.jpg"
+        imageSrc="/images/van_outside.jpg"
         title="Ihr Partner für Anlagenservice"
         text="Die Meier Technik GmbH steht für Zuverlässigkeit in der Industrie. Von der Wartung komplexer Verpackungsanlagen bis hin zu individuellen Schweissarbeiten im Lebensmittelbetrieb bieten wir Ihnen massgeschneiderte Lösungen. Wir sorgen dafür, dass Ihre Produktion läuft."
         eyebrow="Kompetenz"
@@ -17,7 +17,7 @@ const HomeContainer: FC = () => {
 
       {/* Teaser Referenzen */}
       <ContentSection
-        imageSrc="/images/smallVan.jpg" // Hier später passendes Bild (z.B. Migros Anlage)
+        imageSrc="/images/logos_customer.png"
         title="Erfahrung, die zählt"
         text="Ob 365-Tage-Pikett bei der Hochdorf AG oder die Betreuung der Verpackungsstrassen bei der Migros Industrie: Namhafte Unternehmen vertrauen auf unsere Expertise in der Betriebsmechanik und Revision."
         eyebrow="Referenzen"

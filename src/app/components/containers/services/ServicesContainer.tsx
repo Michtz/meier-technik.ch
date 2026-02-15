@@ -5,11 +5,11 @@ import ListContentSection from "@/app/components/system/listContent/ListContentS
 const ServicesContainer: FC = () => {
   return (
     <>
-      <Hero title="Unsere Dienstleistungen" imageSrc="/images/smallVan.jpg" />
+      <Hero title="Unsere Dienstleistungen" imageSrc="/images/drill.jpg" />
 
       {/* Block 1: Maschinen & Anlagen */}
       <ListContentSection
-        imageSrc="/images/smallVan.jpg"
+        imageSrc="/images/fliessband.jpg"
         eyebrow="Industrieservice"
         title="Wartung & Reparatur"
         items={[
@@ -22,7 +22,7 @@ const ServicesContainer: FC = () => {
 
       {/* Block 2: Optimierung & Konstruktion */}
       <ListContentSection
-        imageSrc="/images/smallVan.jpg"
+        imageSrc="/images/welding.jpg"
         eyebrow="Optimierung"
         title="Maschinenbau & Schweisstechnik"
         reverse
@@ -37,7 +37,7 @@ const ServicesContainer: FC = () => {
 
       {/* Block 3: Revisionen */}
       <ListContentSection
-        imageSrc="/images/smallVan.jpg"
+        imageSrc="/images/revision.jpg"
         eyebrow="Instandhaltung"
         title="Revisionen & Ventilservice"
         items={[

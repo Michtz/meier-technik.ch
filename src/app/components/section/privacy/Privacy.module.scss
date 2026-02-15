@@ -1,42 +1,52 @@
-@use '../../../_variables' as *;
+@import "../../../_variables.scss";
 
-.container {
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
+.legalTerms, .privacy { // Klasse je nach Datei anpassen oder beide nutzen
+  padding: 4rem 0;
+  background-color: $color-white;
+  color: $color-text;
 }
 
-.content {
-  max-width: 800px;
-  width: 100%;
-  color: $color-text;
-  line-height: 1.6;
+.title {
+  font-family: $font-main;
+  font-size: 2rem;
+  color: $color-primary;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid $color-light-gray;
+  padding-bottom: 1rem;
+}
 
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: $color-text;
-  }
+.section {
+  margin-bottom: 2.5rem;
 
   h2 {
-    font-size: 1.5rem;
-    margin-top: 2.5rem;
+    font-family: $font-main;
+    font-size: 1.25rem;
+    color: $color-secondary;
     margin-bottom: 1rem;
-    border-bottom: 1px solid $color-light-gray;
-    padding-bottom: 0.5rem;
-  }
-
-  h3 {
-    font-size: 1.1rem;
-    margin-top: 1.5rem;
   }
 
   p {
+    line-height: 1.6;
     margin-bottom: 1rem;
+    max-width: 800px;
   }
 
-  .intro {
-    font-weight: 500;
-    font-size: 1.1rem;
+  ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+  }
+
+  a {
+    color: $color-primary;
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-secondary;
+    }
   }
 }
