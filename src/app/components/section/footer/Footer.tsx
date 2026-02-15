@@ -30,7 +30,7 @@ const Footer: FC = () => {
           </div>
 
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2161.514893718318!2d8.275084216138142!3d47.26753338635682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sm%C3%BCller%20schongau%20Gewerbepark!5e1!3m2!1sde!2sch!4v1771155615534!5m2!1sde!2sch"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2707.3949397634815!2d8.275774099999998!3d47.2675337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47901b2fdf17bdb1%3A0x88c840983665d868!2sMeier%20Technik%20GmbH!5e0!3m2!1sen!2sch!4v1771180040223!5m2!1sen!2sch"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>

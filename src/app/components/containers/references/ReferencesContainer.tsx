@@ -6,7 +6,11 @@ import ContentSection from "@/app/components/system/content/ContentSection";
 const ReferencesContainer: FC = () => {
   return (
     <>
-      <Hero title="Ausgewählte Projekte" imageSrc="/images/smallVan.jpg" />
+      <Hero
+        title="Ausgewählte Projekte"
+        imageSrc="/images/van_inside.jpg"
+        titlePosition={"-150px"}
+      />
 
       {/* Intro Text */}
       <ContentSection
@@ -19,7 +23,7 @@ const ReferencesContainer: FC = () => {
 
       {/* Migros */}
       <ListContentSection
-        imageSrc="/images/smallVan.jpg"
+        imageSrc="/images/migros_industries_logo.png"
         eyebrow="Lebensmittelindustrie"
         title="Migros Industrie AG"
         items={[
@@ -31,7 +35,7 @@ const ReferencesContainer: FC = () => {
 
       {/* Hochdorf */}
       <ListContentSection
-        imageSrc="/images/smallVan.jpg"
+        imageSrc="/images/hochdorf_logo.png"
         eyebrow="Betriebsmechanik"
         title="Hochdorf AG"
         reverse
@@ -45,7 +49,7 @@ const ReferencesContainer: FC = () => {
 
       {/* Tschopp */}
       <ListContentSection
-        imageSrc="/images/smallVan.jpg"
+        imageSrc="/images/tschop_logo.png"
         eyebrow="Holzverarbeitung"
         title="Tschopp AG"
         items={[
