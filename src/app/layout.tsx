@@ -51,12 +51,44 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Meier Technik GmbH",
+  image: "https://www.meier-technik.ch/images/smallVan.jpg",
+  url: "https://www.meier-technik.ch",
+  telephone: "+41 79 000 00 00", // HIER TELEFONNUMMER EINTRAGEN
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Musterstrasse 1", // HIER ADRESSE EINTRAGEN
+    addressLocality: "Musterhausen",
+    postalCode: "6000",
+    addressCountry: "CH",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 47.050168, // HIER KOORDINATEN EINTRAGEN (Google Maps Rechtsklick)
+    longitude: 8.309307,
+  },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    opens: "07:30",
+    closes: "17:30",
+  },
+  priceRange: "$$",
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="de">
       <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         <title>Meier Technik Gmbh | Ihre Experten für Reparaturen und Service in der Region.</title>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body>
         <Header />

@@ -4,7 +4,6 @@ import React, { FC } from "react";
 import style from "./Footer.module.scss";
 import Link from "@/app/components/system/link/Link";
 import MailIcon from "@/app/components/icons/MailIcon";
-import PhoneIcon from "@/app/components/icons/PhoneIcon";
 
 const Footer: FC = () => {
   return (
@@ -21,17 +20,17 @@ const Footer: FC = () => {
                   <a href="mailto:d.meier@meier-technik.ch">d.meier@meier-technik.ch</a>
                 </span>
               </li>
-              <li>
-                <PhoneIcon />
-                <span id="mail" className={style.contactContent}>
-                  Telefon oder Whatsapp:&nbsp; <a href="tel:+41000000000">00000000000</a>
-                </span>
-              </li>
+              {/*<li>*/}
+              {/*  <PhoneIcon />*/}
+              {/*  <span id="mail" className={style.contactContent}>*/}
+              {/*    Telefon oder Whatsapp:&nbsp; <a href="tel:+41000000000">00000000000</a>*/}
+              {/*  </span>*/}
+              {/*</li>*/}
             </ul>
           </div>
 
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10876.094198278743!2d8.31044935!3d47.0397687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ffb98861b02a9%3A0x9c81ffcf202e488d!2sLuzern!5e0!3m2!1sde!2sch!4v1770829445313!5m2!1sde!2sch"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5357.608948620831!2d10.881687871652309!3d47.824006461971486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479c4759a6901f07%3A0x1c5be5cd7c82b510!2sGewerbepark%20Lang!5e0!3m2!1sde!2sch!4v1771153170151!5m2!1sde!2sch"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
