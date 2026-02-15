@@ -5,7 +5,7 @@ import { FC } from "react";
 interface ListContentSectionProps {
   imageSrc: string;
   title: string;
-  items: string[]; // Hier Array statt String
+  items: string[];
   eyebrow?: string;
   reverse?: boolean;
 }
@@ -17,16 +17,9 @@ const ListContentSection: FC<ListContentSectionProps> = ({
   eyebrow,
   reverse,
 }) => {
-  // Wir nutzen CSS Grid order oder Template Areas für Reverse,
-  // oder drehen die Divs im DOM wie im Original.
-  // Hier eine saubere DOM-Lösung passend zum SCSS:
-
   return (
     <section className={style.section}>
-      <div
-        className={style.container}
-        style={{ direction: reverse ? "rtl" : "ltr" }} // Trick für Grid-Wechsel desktop, reset direction in children
-      >
+      <div className={style.container} style={{ direction: reverse ? "rtl" : "ltr" }}>
         {/* Text Content */}
         <div className={style.textContent} style={{ direction: "ltr" }}>
           {eyebrow && <span className={style.eyebrow}>{eyebrow}</span>}
@@ -40,7 +33,6 @@ const ListContentSection: FC<ListContentSectionProps> = ({
           </ul>
         </div>
 
-        {/* Image */}
         <div className={style.imageWrapper} style={{ direction: "ltr" }}>
           <Image
             src={imageSrc}
