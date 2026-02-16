@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/app/globals.scss";
 import Header from "@/app/components/section/header/Header";
 import Footer from "@/app/components/section/footer/Footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const baseUrl = "https://www.meier-technik.ch";
 
@@ -95,6 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-YH2SK50RFY" />
     </html>
   );
 }
