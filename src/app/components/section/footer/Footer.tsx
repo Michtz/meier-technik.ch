@@ -37,8 +37,12 @@ const Footer: FC = () => {
           ></iframe>
         </div>
         <div className={`${style.footerColumn} ${style.additionalInfo}`}>
-          <Link href="/legalterms">Impressum</Link>
-          <Link href="/privacy">Datenschutz</Link>
+          <Link href="/legalterms" aria-label="Das Rechtliche">
+            Impressum
+          </Link>
+          <Link href="/privacy" aria-label="Datenschutz">
+            Datenschutz
+          </Link>
         </div>
         <div className={style.footerBottom}>
           <div className={style.copyright}>

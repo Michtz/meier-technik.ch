@@ -37,13 +37,19 @@ const ResponsiveAppBar = () => {
 
           <ul className={style.navItemContainer}>
             <li className={style.navItem}>
-              <Link href={"/services"}>Dienstleistungen</Link>
+              <Link href={"/services"} aria-label="Unsere Services">
+                Dienstleistungen
+              </Link>
             </li>
             <li className={style.navItem}>
-              <Link href={"/references"}>Referenzen</Link>
+              <Link href={"/references"} aria-label="Unsere Referenzen">
+                Referenzen
+              </Link>
             </li>
             <li className={style.navItem}>
-              <Link href={"/about"}>Über uns</Link>
+              <Link href={"/about"} aria-label="Etwas Über Uns">
+                Über uns
+              </Link>
             </li>
           </ul>
         </div>
@@ -53,10 +59,13 @@ const ResponsiveAppBar = () => {
         </a>
 
         <span className={`${style.rightNavContainer} ${!isLoading ? style.fadeIn : style.fadeOut}`}>
-          <Link href={"https://www.instagram.com/meier_technik_gmbh?igsh=MWhuam0waXQzYnpndA=="}>
+          <Link
+            aria-label="Besuchen Sie uns auf Instagram"
+            href={"https://www.instagram.com/meier_technik_gmbh?igsh=MWhuam0waXQzYnpndA=="}
+          >
             <InstagramIcon />
           </Link>
-          <Link href={"#mail"}>
+          <Link href={"#mail"} aria-label="Kontaktieren Sie uns per Mail">
             <MailIcon className={style.mailIcon} width={45} height={45} />
           </Link>
         </span>

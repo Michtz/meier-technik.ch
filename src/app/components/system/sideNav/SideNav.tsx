@@ -37,13 +37,19 @@ const SideNav: React.FC<SideNavProps> = ({ isOpen, onClose }) => {
             </Link>
             <ul className={style.navList}>
               <li className={style.navItem}>
-                <Link href={"/services"}>Dienstleistungen</Link>
+                <Link href={"/services"} aria-label="Unsere Services">
+                  Dienstleistungen
+                </Link>
               </li>
               <li className={style.navItem}>
-                <Link href={"/references"}>Referenzen</Link>
+                <Link href={"/references"} aria-label="Unsere Referenzen">
+                  Referenzen
+                </Link>
               </li>
               <li className={style.navItem}>
-                <Link href={"/about"}>Über uns</Link>
+                <Link href={"/about"} aria-label="Etwas Über Uns">
+                  Über uns
+                </Link>
               </li>
             </ul>
           </div>
@@ -56,12 +62,15 @@ const SideNav: React.FC<SideNavProps> = ({ isOpen, onClose }) => {
                   href="https://www.instagram.com/meier_technik_gmbh?igsh=MWhuam0waXQzYnpndA=="
                   external
                   className={style.iconLink}
+                  aria-label="Folgen Sie uns auf Instagramm"
                 >
                   <InstagramIcon />
                 </Link>
               </li>
               <li className={style.navItem}>
-                <a href="mailto:d.meier@meier-technik.ch">d.meier@meier-technik.ch</a>
+                <a href="mailto:d.meier@meier-technik.ch" aria-label="Schreiben Sie uns eine Mail">
+                  d.meier@meier-technik.ch
+                </a>
               </li>
             </ul>
           </div>
