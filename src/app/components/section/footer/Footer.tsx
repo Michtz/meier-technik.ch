@@ -32,6 +32,7 @@ const Footer: FC = () => {
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2707.3949397634815!2d8.275774099999998!3d47.2675337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47901b2fdf17bdb1%3A0x88c840983665d868!2sMeier%20Technik%20GmbH!5e0!3m2!1sen!2sch!4v1771180040223!5m2!1sen!2sch"
             loading="lazy"
+            title={"Standort"}
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
