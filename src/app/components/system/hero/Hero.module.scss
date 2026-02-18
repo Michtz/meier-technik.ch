@@ -36,8 +36,10 @@
   font-size: 3.5rem;
   font-weight: 700;
   text-align: center;
-  padding: 0 15px;
   letter-spacing: 2.5px;
+  padding: 5px 40px;
+  backdrop-filter: blur(4px);
+  border-radius: 2px;
 
   @media (max-width: 768px) {
     font-size: 2rem;
