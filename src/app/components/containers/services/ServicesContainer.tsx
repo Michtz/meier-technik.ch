@@ -37,7 +37,7 @@ const ServicesContainer: FC = () => {
 
       {/* Block 3: Revisionen */}
       <ListContentSection
-        imageSrc="/images/revision.jpg"
+        imageSrc="/images/ventilAnlage.png"
         eyebrow="Instandhaltung"
         title="Revisionen & Ventilservice"
         items={[

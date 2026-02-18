@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import style from "./SideNav.module.scss";
-import LogoIcon from "@/app/components/icons/Logo";
 import InstagramIcon from "@/app/components/icons/InstagramIcon";
 import Link from "@/app/components/system/link/Link";
 import MaterialIcon from "@/app/components/system/materialIcon/MaterialIcon";
@@ -33,7 +32,7 @@ const SideNav: React.FC<SideNavProps> = ({ isOpen, onClose }) => {
         <div className={style.sideNavContent}>
           <div className={style.navSection}>
             <Link href="/" className={style.logoWrapper}>
-              <LogoIcon height={60} />
+              <img src="/images/logo.png" alt={"logo"} width={"84"} />
             </Link>
             <ul className={style.navList}>
               <li className={style.navItem}>
