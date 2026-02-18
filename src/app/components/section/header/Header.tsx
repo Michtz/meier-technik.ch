@@ -62,7 +62,7 @@ const ResponsiveAppBar = () => {
             aria-label="Besuchen Sie uns auf Instagram"
             href={"https://www.instagram.com/meier_technik_gmbh?igsh=MWhuam0waXQzYnpndA=="}
           >
-            <InstagramIcon />
+            <InstagramIcon className={style.instaIcon} />
           </Link>
           <Link href={"#mail"} aria-label="Kontaktieren Sie uns per Mail">
             <MailIcon className={style.mailIcon} width={45} height={45} />
