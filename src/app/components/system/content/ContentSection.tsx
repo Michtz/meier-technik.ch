@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import style from "./ContentSection.module.scss";
 import { Property } from "csstype";
@@ -10,6 +12,8 @@ interface ContentSectionProps {
   eyebrow?: string;
   reverse?: boolean;
   block?: boolean;
+  button?: string;
+  href?: string;
   objectFit?: ObjectFit;
 }
 
@@ -105,6 +109,85 @@ const ContentSectionC = ({
   );
 };
 
+const ContentSectionD = ({
+  imageSrc,
+  title,
+  text,
+  eyebrow,
+  objectFit = "cover",
+  button,
+  href,
+}: ContentSectionProps) => {
+  return (
+    <section className={style.section}>
+      <div className={style.container} style={{ display: "grid", flexDirection: "column-reverse" }}>
+        <div className={style.imageWrapper}>
+          <Image
+            src={imageSrc}
+            alt="Feature Bild"
+            fill
+            className={style.image}
+            style={{ objectFit: objectFit }}
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
+
+        <div className={style.textContent}>
+          <span className={style.eyebrow}>{eyebrow}</span>
+          <h2 className={style.headline}>{title}</h2>
+          <p className={style.text}>{text}</p>
+          {href && (
+            <button
+              className={style.button}
+              data-right={true}
+              onClick={() => (window.location.pathname = href)}
+            >
+              {button}
+            </button>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const ContentSectionE = ({
+  imageSrc,
+  title,
+  text,
+  eyebrow,
+  objectFit = "cover",
+  button,
+  href,
+}: ContentSectionProps) => {
+  return (
+    <section className={style.section}>
+      <div className={style.container} style={{ display: "grid", flexDirection: "column-reverse" }}>
+        <div className={style.textContent}>
+          <span className={style.eyebrow}>{eyebrow}</span>
+          <h2 className={style.headline}>{title}</h2>
+          <p className={style.text}>{text}</p>
+          {href && (
+            <button className={style.button} onClick={() => (window.location.pathname = href)}>
+              {button}
+            </button>
+          )}
+        </div>
+        <div className={style.imageWrapper}>
+          <Image
+            src={imageSrc}
+            alt="Feature Bild"
+            fill
+            className={style.image}
+            sizes="(max-width: 768px) 100vw, 50vw"
+            style={{ objectFit: objectFit }}
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const ContentSection = ({
   imageSrc,
   title,
@@ -112,6 +195,8 @@ const ContentSection = ({
   eyebrow,
   reverse,
   block,
+  button,
+  href,
   objectFit = "cover",
 }: ContentSectionProps) => {
   if (block)
@@ -124,7 +209,20 @@ const ContentSection = ({
         objectFit={objectFit}
       />
     );
-  if (reverse)
+  if (!!button && reverse)
+    return (
+      <ContentSectionD
+        imageSrc={imageSrc}
+        title={title}
+        text={text}
+        eyebrow={eyebrow}
+        objectFit={objectFit}
+        button={button}
+        href={href}
+      />
+    );
+
+  if (reverse && !button)
     return (
       <ContentSectionA
         imageSrc={imageSrc}
@@ -132,6 +230,19 @@ const ContentSection = ({
         text={text}
         eyebrow={eyebrow}
         objectFit={objectFit}
+      />
+    );
+
+  if (!!button)
+    return (
+      <ContentSectionE
+        imageSrc={imageSrc}
+        title={title}
+        text={text}
+        eyebrow={eyebrow}
+        objectFit={objectFit}
+        button={button}
+        href={href}
       />
     );
 

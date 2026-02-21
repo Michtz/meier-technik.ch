@@ -72,29 +72,30 @@
         transition: all 0.2s ease-in-out;
 
         span{
-          background-image: linear-gradient($color-text, $color-text);
+          background-image: linear-gradient($color-text-accent, $color-text-accent);
           background-repeat: no-repeat;
           background-position-y: 100%;
           background-position-x: 0%;
           transition: background-size 0.4s ease-in-out;
-          background-size: 0% 1px;
+          background-size: 0% 1.5px;
         }
 
         &:hover {
-          transform: translateY(-1.5px);
+          transform: translateY(-1px);
           span{
-            background-size: 100% 1px;
-            background-image: linear-gradient($color-text, $color-text);
+            background-size: 100% 1.5px;
+            background-image: linear-gradient($color-text-accent, $color-text-accent);
+            color: color-mix(in srgb, $color-text, $color-text-accent 30%);
           }
         }
 
         &:active {
           transform: translateY(0);
           span {
-            color: color-mix(in srgb, $color-text, white 30%);
+            color: color-mix(in srgb, $color-text-accent, white 5%);
             transition: 0.3s;
-            background-size: 30% 1px !important;
-            background-image: linear-gradient(color-mix(in srgb, $color-text, white 50%), color-mix(in srgb, $color-text, white 50%));
+            background-size: 30% 1.5px !important;
+            background-image: linear-gradient(color-mix(in srgb, $color-text-accent, white 10%), color-mix(in srgb, $color-text-accent, white 10%));
           }
         }
       }
