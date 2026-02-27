@@ -5,7 +5,7 @@ import ContentSection from "@/app/components/system/content/ContentSection";
 const AboutContainer: FC = () => {
   return (
     <>
-      <Hero title="Über Meier Technik" imageSrc="/images/smallVan.jpg" />
+      <Hero title="Über Meier Technik" imageSrc="/images/twoVehicle_fog.jpg" />
 
       <ContentSection
         imageSrc="/images/meier_profil.png"

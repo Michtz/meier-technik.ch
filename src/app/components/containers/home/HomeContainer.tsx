@@ -5,11 +5,11 @@ import ContentSection from "@/app/components/system/content/ContentSection";
 const HomeContainer: FC = () => {
   return (
     <>
-      <Hero title="Präzision in Industrie & Mechanik" imageSrc="/images/smallVan.jpg" />
+      <Hero title="Präzision in Industrie & Mechanik" imageSrc="/images/twoVehicleNew.png" />
 
       {/* Intro */}
       <ContentSection
-        imageSrc="/images/van_outside.jpg"
+        imageSrc="/images/twoVehicle_fog_side.jpg"
         title="Ihr Partner für Anlagenservice"
         text="Die Meier Technik GmbH steht für Zuverlässigkeit in der Industrie. Von der Wartung komplexer Verpackungsanlagen bis hin zu individuellen Schweissarbeiten im Lebensmittelbetrieb bieten wir Ihnen massgeschneiderte Lösungen. Wir sorgen dafür, dass Ihre Produktion läuft."
         eyebrow="Kompetenz"
